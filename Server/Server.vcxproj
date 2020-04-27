@@ -156,15 +156,20 @@
     <ClCompile Include="AdditionServiceImpl.cpp" />
     <ClCompile Include="GreetServiceImpl.cpp" />
     <ClCompile Include="Server.cpp" />
+    <ClCompile Include="SignServiceImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdditionServiceImpl.h" />
     <ClInclude Include="GreetServiceImpl.h" />
+    <ClInclude Include="SignServiceImpl.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Generated\Generated.vcxproj">
       <Project>{b42585ce-7455-4030-a726-de935d94233c}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Zodii.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

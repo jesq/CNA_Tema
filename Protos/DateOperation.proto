@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "NoResponse.proto";
+import "DateRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service DateOperationService {
+	rpc Sign(DateRequest) returns (NoResponse);
+}

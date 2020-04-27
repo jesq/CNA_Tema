@@ -24,6 +24,9 @@
     <ClCompile Include="GreetServiceImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SignServiceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdditionServiceImpl.h">
@@ -32,5 +35,13 @@
     <ClInclude Include="GreetServiceImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SignServiceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Zodii.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

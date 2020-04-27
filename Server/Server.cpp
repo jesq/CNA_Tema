@@ -1,5 +1,6 @@
 #include <iostream>
 #include "GreetServiceImpl.h"
+#include "SignServiceImpl.h"
 
 #include <grpc/grpc.h>
 #include <grpcpp/server.h>
@@ -9,7 +10,8 @@
 int main()
 {
     std::string server_address("localhost:8888");
-    GreetServiceImpl service;
+    //GreetServiceImpl service;
+    SignServiceImpl service;
 
     ::grpc_impl::ServerBuilder serverBuilder;
     serverBuilder.AddListeningPort(server_address, grpc::InsecureServerCredentials());

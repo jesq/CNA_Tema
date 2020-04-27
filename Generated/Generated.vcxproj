@@ -148,6 +148,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DateOperation.grpc.pb.h" />
+    <ClInclude Include="DateOperation.pb.h" />
+    <ClInclude Include="DateRequest.grpc.pb.h" />
+    <ClInclude Include="DateRequest.pb.h" />
     <ClInclude Include="DivisionOperation.grpc.pb.h" />
     <ClInclude Include="DivisionOperation.pb.h" />
     <ClInclude Include="DivisionRequest.grpc.pb.h" />
@@ -174,6 +178,10 @@
     <ClInclude Include="SumRequest.pb.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DateOperation.grpc.pb.cc" />
+    <ClCompile Include="DateOperation.pb.cc" />
+    <ClCompile Include="DateRequest.grpc.pb.cc" />
+    <ClCompile Include="DateRequest.pb.cc" />
     <ClCompile Include="DivisionOperation.grpc.pb.cc" />
     <ClCompile Include="DivisionOperation.pb.cc" />
     <ClCompile Include="DivisionRequest.grpc.pb.cc" />

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "NameOperation.grpc.pb.h"
+#include "DateOperation.grpc.pb.h"
 
 #include <grpc/grpc.h>
 #include <grpcpp/channel.h>
@@ -19,17 +20,28 @@ int main()
     grpc_init();
     ClientContext context;
 
-    auto sum_stub = NameOperationService::NewStub(grpc::CreateChannel("localhost:8888",
+   /* auto sum_stub = NameOperationService::NewStub(grpc::CreateChannel("localhost:8888",
+        grpc::InsecureChannelCredentials()));
+    */
+
+    auto sum_stub = DateOperationService::NewStub(grpc::CreateChannel("localhost:8888",
         grpc::InsecureChannelCredentials()));
 
-    NameRequest request;
+    /*NameRequest request;
     std::string nume;
     std::cin >> nume;
     request.set_name(nume);
+    */
+
+    DateRequest request;
+    std::string data;
+    std::cout << "Introduceti data: ";
+    std::cin >> data;
+    request.set_date(data);
 
     NoResponse response;
 
-    auto status = sum_stub->Greet(&context, request, &response);
+    auto status = sum_stub->Sign(&context, request, &response);
     
     return 0;
 }
